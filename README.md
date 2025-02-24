@@ -13,5 +13,12 @@ Este é um projeto que utiliza Docker para facilitar o desenvolvimento e a execu
 docker-compose up --build
 ```
 
-3. Após a construção dos containers, acesse o projeto no navegador através do seguinte endereço:
+3. Após a construção dos containers, rode o seguinte comando
+   
+```
+RUN npx sequelize init
+RUN npx sequelize-cli db:migrate
+```
+
+4. Após isso, acesse o projeto no navegador através do seguinte endereço:
    http://localhost:8080
